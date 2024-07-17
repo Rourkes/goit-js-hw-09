@@ -1,0 +1,116 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+/* Galley */
+.gallery {
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 156px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* Form */
+.feedback-form {
+  margin: 0 auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px;
+  max-width: 408px;
+  height: 296px;
+}
+.feedback-form label {
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form input {
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.feedback-form textarea {
+  max-height: 80px;
+  resize: none;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding-top: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.feedback-form button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: none;
+  border: 1px solid #000000;
+}
+.feedback-form button:hover {
+  background: #6c8cff;
+}
